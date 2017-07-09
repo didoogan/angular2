@@ -1,4 +1,5 @@
 import {Component, Input, Output, EventEmitter} from "@angular/core";
+import {IEvent} from "./shared/event.model";
 
 @Component({
     selector: 'tumbnail-cmp',
@@ -14,7 +15,7 @@ import {Component, Input, Output, EventEmitter} from "@angular/core";
     `]
 })
 export class ThumbnailEvent {
-    @Input() event: any;
+    @Input() event: IEvent;
     @Output() eventClick = new EventEmitter();
     someProperty: any = 'Just property';
 
